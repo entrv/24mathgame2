@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.entrv.a24mathgame2.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+    <com.example.entrv.a24mathgame2.MultiRowsRadioGroup
+        android:id="@+id/radioGroup1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+            <info.hoang8f.android.segmented.SegmentedGroup
+                xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segmented21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="2dp"
+                segmentedgroup:sc_corner_radius="10dp"
+
+                segmentedgroup:sc_tint_color="#FFEB3B"
+
+                segmentedgroup:sc_checked_text_color="#7C4DFF"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/button_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One"
+                    style="@style/RadioButton"
+                    android:layout_weight="0.1"
+                    />
+
+                <CheckBox
+                    android:id="@+id/button_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Two"
+                    style="@style/RadioButton"
+                    android:layout_weight="0.1"
+                    />
+            </info.hoang8f.android.segmented.SegmentedGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+            <info.hoang8f.android.segmented.SegmentedGroup
+                xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segmented22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="2dp"
+                segmentedgroup:sc_corner_radius="10dp"
+                segmentedgroup:sc_tint_color="#FFEB3B"
+
+                segmentedgroup:sc_checked_text_color="#7C4DFF"
+                >
+
+                <CheckBox
+                    android:id="@+id/button_3"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="One" />
+
+                <CheckBox
+                    android:id="@+id/button_4"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Two" />
+            </info.hoang8f.android.segmented.SegmentedGroup>
+        </LinearLayout>
+    </com.example.entrv.a24mathgame2.MultiRowsRadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="80dp"
+            android:background="#CDDC39"
+            android:gravity="center">
+
+            <info.hoang8f.android.segmented.SegmentedGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/segmented31"
+               >
+
+                <RadioButton
+                    android:id="@+id/button_plus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="+"
+                    style="@style/RadioButton" />
+
+                <RadioButton
+                    android:id="@+id/button_minus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="-"
+                    style="@style/RadioButton" />
+                <RadioButton
+                    android:id="@+id/button_multiple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="X"
+                    style="@style/RadioButton" />
+                <RadioButton
+                    android:id="@+id/button_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="÷"
+                    style="@style/RadioButton" />
+            </info.hoang8f.android.segmented.SegmentedGroup>
+
+        </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button_reset"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <Button
+            android:id="@+id/button_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="button_replay"
+            tools:layout_editor_absoluteX="227dp"
+            tools:layout_editor_absoluteY="267dp" />
+   </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
